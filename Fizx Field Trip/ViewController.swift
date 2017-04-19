@@ -18,6 +18,7 @@ class ViewController: UIViewController, MKMapViewDelegate
     
     @IBOutlet weak var myMapView: MKMapView!
     let sixFlagsCoordiantes = CLLocationCoordinate2DMake(42.369680, -87.935544)
+    let sixFlagsDemon = CLLocationCoordinate2DMake(42.366404, -87.935024)
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -27,11 +28,16 @@ class ViewController: UIViewController, MKMapViewDelegate
     
     func addPinToMap()
     {
-        let myAnnotation = MKPointAnnotation()
-        myAnnotation.coordinate = sixFlagsCoordiantes
-        myAnnotation.title = "6 flags"
-        myAnnotation.subtitle = "Carousel Plaza"
-        myMapView.addAnnotation(myAnnotation)
+        let myPlaza = MKPointAnnotation()
+        myPlaza.coordinate = sixFlagsCoordiantes
+        myPlaza.title = "6 flags"
+        myPlaza.subtitle = "Carousel Plaza"
+        myMapView.addAnnotation(myPlaza)
+        let myDemon = MKPointAnnotation()
+        myDemon.coordinate = sixFlagsDemon
+        myDemon.title = "Demon"
+        myDemon.subtitle = "Questions #-#"
+        myMapView.addAnnotation(myDemon)
     }
     
     @IBAction func goToSixFlags(_ sender: Any)
