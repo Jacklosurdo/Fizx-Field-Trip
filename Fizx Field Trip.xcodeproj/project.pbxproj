@@ -14,6 +14,7 @@
 		3FD0366E1EA5133A00F92173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD0366C1EA5133A00F92173 /* LaunchScreen.storyboard */; };
 		3FD036791EA5133A00F92173 /* Fizx_Field_TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD036781EA5133A00F92173 /* Fizx_Field_TripTests.swift */; };
 		3FD036841EA5133B00F92173 /* Fizx_Field_TripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD036831EA5133B00F92173 /* Fizx_Field_TripUITests.swift */; };
+		97CF527A1EAE52C900E55232 /* TQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF52791EAE52C900E55232 /* TQViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3FD0367F1EA5133A00F92173 /* Fizx Field TripUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fizx Field TripUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD036831EA5133B00F92173 /* Fizx_Field_TripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fizx_Field_TripUITests.swift; sourceTree = "<group>"; };
 		3FD036851EA5133B00F92173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97CF52791EAE52C900E55232 /* TQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3FD036631EA5133A00F92173 /* AppDelegate.swift */,
 				3FD036651EA5133A00F92173 /* ViewController.swift */,
 				3FD036671EA5133A00F92173 /* Main.storyboard */,
+				97CF52791EAE52C900E55232 /* TQViewController.swift */,
 				3FD0366A1EA5133A00F92173 /* Assets.xcassets */,
 				3FD0366C1EA5133A00F92173 /* LaunchScreen.storyboard */,
 				3FD0366F1EA5133A00F92173 /* Info.plist */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97CF527A1EAE52C900E55232 /* TQViewController.swift in Sources */,
 				3FD036661EA5133A00F92173 /* ViewController.swift in Sources */,
 				3FD036641EA5133A00F92173 /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +509,7 @@
 				3FD0368A1EA5133B00F92173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FD0368B1EA5133B00F92173 /* Build configuration list for PBXNativeTarget "Fizx Field TripTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				3FD0368D1EA5133B00F92173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FD0368E1EA5133B00F92173 /* Build configuration list for PBXNativeTarget "Fizx Field TripUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				3FD036901EA5133B00F92173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
