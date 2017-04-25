@@ -24,6 +24,7 @@ class ViewController: UIViewController, MKMapViewDelegate
         super.viewDidLoad()
         myMapView.delegate = self
         addPinToMap()
+        centerMap(location: sixFlagsCoordiantes)
     }
     
     func addPinToMap()
