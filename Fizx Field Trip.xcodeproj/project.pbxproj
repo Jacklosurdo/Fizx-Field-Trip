@@ -15,6 +15,8 @@
 		3FD036791EA5133A00F92173 /* Fizx_Field_TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD036781EA5133A00F92173 /* Fizx_Field_TripTests.swift */; };
 		3FD036841EA5133B00F92173 /* Fizx_Field_TripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD036831EA5133B00F92173 /* Fizx_Field_TripUITests.swift */; };
 		97CF527A1EAE52C900E55232 /* TQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF52791EAE52C900E55232 /* TQViewController.swift */; };
+		97CF527C1EAFA5F700E55232 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF527B1EAFA5F700E55232 /* QuestionsViewController.swift */; };
+		97CF527E1EAFA68500E55232 /* AttachmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF527D1EAFA68500E55232 /* AttachmentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3FD036831EA5133B00F92173 /* Fizx_Field_TripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fizx_Field_TripUITests.swift; sourceTree = "<group>"; };
 		3FD036851EA5133B00F92173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97CF52791EAE52C900E55232 /* TQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQViewController.swift; sourceTree = "<group>"; };
+		97CF527B1EAFA5F700E55232 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		97CF527D1EAFA68500E55232 /* AttachmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				3FD036631EA5133A00F92173 /* AppDelegate.swift */,
 				3FD036651EA5133A00F92173 /* ViewController.swift */,
 				3FD036671EA5133A00F92173 /* Main.storyboard */,
+				97CF527D1EAFA68500E55232 /* AttachmentViewController.swift */,
+				97CF527B1EAFA5F700E55232 /* QuestionsViewController.swift */,
 				97CF52791EAE52C900E55232 /* TQViewController.swift */,
 				3FD0366A1EA5133A00F92173 /* Assets.xcassets */,
 				3FD0366C1EA5133A00F92173 /* LaunchScreen.storyboard */,
@@ -264,7 +270,9 @@
 			files = (
 				97CF527A1EAE52C900E55232 /* TQViewController.swift in Sources */,
 				3FD036661EA5133A00F92173 /* ViewController.swift in Sources */,
+				97CF527C1EAFA5F700E55232 /* QuestionsViewController.swift in Sources */,
 				3FD036641EA5133A00F92173 /* AppDelegate.swift in Sources */,
+				97CF527E1EAFA68500E55232 /* AttachmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -52,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1151" y="139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="IRl-i5-qox">
@@ -92,12 +92,73 @@
             </objects>
             <point key="canvasLocation" x="1848.8" y="138.98050974512745"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="7vH-Mk-LHr">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="C25-pC-CAV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LH7-EY-Doy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2535" y="139"/>
+        </scene>
+        <!--Attachment View Controller-->
+        <scene sceneID="vBX-Ss-4rf">
+            <objects>
+                <viewController id="aKp-ki-B4j" customClass="AttachmentViewController" customModule="Fizx_Field_Trip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mea-FX-7GA"/>
+                        <viewControllerLayoutGuide type="bottom" id="yFZ-CH-Hwq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sed-8c-d6K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYK-uT-zQp">
+                                <rect key="frame" x="164" y="535" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vhp-Wa-z7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3223" y="139"/>
+        </scene>
+        <!--Questions View Controller-->
+        <scene sceneID="0Tg-gR-NCG">
+            <objects>
+                <viewController id="UP9-WY-EJF" customClass="QuestionsViewController" customModule="Fizx_Field_Trip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e9x-2G-dGm"/>
+                        <viewControllerLayoutGuide type="bottom" id="InY-Hw-8G6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dgc-Us-bzE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfJ-Zw-J2r">
+                                <rect key="frame" x="16" y="74" width="343" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIu-eD-UuG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3924" y="138.98050974512745"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="wX7-Y4-01k">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xwm-MV-aFr" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Y3-r8-vgb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4Y3-r8-vgb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -108,7 +169,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s59-Cn-fPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204" y="139"/>
+            <point key="canvasLocation" x="433" y="139"/>
         </scene>
     </scenes>
 </document>
