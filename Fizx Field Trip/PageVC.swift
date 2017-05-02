@@ -37,18 +37,38 @@ class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewCo
         guard previousIndex >= 0 else{
             return VCArr.last
         }
-        
+        guard VCArr.count > previousIndex else {
+            return nil
+        }
+        return VCArr[previousIndex]
     }
     
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?{
+        guard let viewControllerIndex = VCArr.index(of: viewController) else{
+            return nil
+        }
+        let nextIndex = viewControllerIndex + 1
         
+        guard nextIndex < VCArr.count else{
+            return VCArr.first
+        }
+        guard VCArr.count > nextIndex else {
+            return nil
+        }
+        return VCArr[nextIndex]
     }
 
-    optional public func presentationCount(for pageViewController: UIPageViewController) -> Int{
-        
+
+    public func presentationCount(for pageViewController: UIPageViewController) -> Int{
+        return VCArr.count
     }
     
-    optional public func presentationIndex(for pageViewController: UIPageViewController) -> Int{
-        
+    public func presentationIndex(for pageViewController: UIPageViewController) -> Int{
+        guard let firstViewController = ViewControllers?.first,
+            let firstViewControllerIndex = VCArr.index(of: firstViewController) else {
+            return 0
+        }
+        return firstViewControllerIndex
     }
+    
 }
