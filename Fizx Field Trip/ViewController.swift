@@ -16,6 +16,9 @@ import CoreLocation
 
 class ViewController: UIViewController, MKMapViewDelegate
 {
+    @IBAction func pageVCButton(_ sender: Any) {
+        performSegue(withIdentifier: "pageVCButton", sender: self)
+    }
     
     @IBOutlet weak var myMapView: MKMapView!
     let sixFlagsCoordiantes = CLLocationCoordinate2DMake(42.369680, -87.935544)

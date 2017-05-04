@@ -12,7 +12,8 @@ class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewCo
     
     lazy var  VCArr: [UIViewController] = {
     return [self.VCInstant(name: "firstVC"),
-            self.VCInstant(name: "secondVC"), ]
+            self.VCInstant(name: "secondVC"),
+            self.VCInstant(name: "thirdVC")]
     }()
     
     private func VCInstant(name: String)-> UIViewController{
@@ -27,6 +28,7 @@ class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewCo
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
         }
     }
+     
 
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?{
         guard let viewControllerIndex = VCArr.index(of: viewController) else{
@@ -64,7 +66,7 @@ class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewCo
     }
     
     public func presentationIndex(for pageViewController: UIPageViewController) -> Int{
-        guard let firstViewController = ViewControllers?.first,
+        guard let firstViewController = viewControllers?.first,
             let firstViewControllerIndex = VCArr.index(of: firstViewController) else {
             return 0
         }
