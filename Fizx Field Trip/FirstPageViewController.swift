@@ -17,7 +17,5 @@ class FirstPageViewController: UIViewController {
 
     
     }
-    
-    let textBox1.text = "Hi how are you?"
-    
+        
 }
