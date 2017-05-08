@@ -23,6 +23,8 @@ class ViewController: UIViewController, MKMapViewDelegate
     @IBOutlet weak var myMapView: MKMapView!
     let sixFlagsCoordiantes = CLLocationCoordinate2DMake(42.369680, -87.935544)
     let sixFlagsDemon = CLLocationCoordinate2DMake(42.366404, -87.935024)
+    let sixFlagsSuperMan = CLLocationCoordinate2DMake(42.371061, -87.934164)
+    let sixFlagsRagingBull = CLLocationCoordinate2DMake(42.366195, -87.937116)
     var locationManager = CLLocationManager.init()
     
     override func viewDidLoad()
@@ -43,11 +45,24 @@ class ViewController: UIViewController, MKMapViewDelegate
         myPlaza.title = "6 flags"
         myPlaza.subtitle = "Carousel Plaza"
         myMapView.addAnnotation(myPlaza)
+        
         let myDemon = MKPointAnnotation()
         myDemon.coordinate = sixFlagsDemon
         myDemon.title = "Demon"
-        myDemon.subtitle = "Questions #-#"
+        myDemon.subtitle = "Questions 1-2"
         myMapView.addAnnotation(myDemon)
+        
+        let mySuperMan = MKPointAnnotation()
+        myDemon.coordinate = sixFlagsSuperMan
+        myDemon.title = "SuperMan"
+        myDemon.subtitle = "Questions 3-4"
+        myMapView.addAnnotation(mySuperMan)
+        
+        let myRagingBull = MKPointAnnotation()
+        myDemon.coordinate = sixFlagsRagingBull
+        myDemon.title = "Raging Bull"
+        myDemon.subtitle = "Questions 5-6"
+        myMapView.addAnnotation(myRagingBull)
     }
     
     @IBAction func goToSixFlags(_ sender: Any)
