@@ -22,7 +22,7 @@ class ViewController: UIViewController, MKMapViewDelegate
     
     @IBOutlet weak var myMapView: MKMapView!
     let sixFlagsCoordiantes = CLLocationCoordinate2DMake(42.369680, -87.935544)
-    let sixFlagsDemon = CLLocationCoordinate2DMake(42.366404, -87.935024)
+    let sixFlagsDemon = CLLocationCoordinate2DMake(42.366378, -87.934907)
     let sixFlagsSuperMan = CLLocationCoordinate2DMake(42.371061, -87.934164)
     let sixFlagsRagingBull = CLLocationCoordinate2DMake(42.366195, -87.937116)
     var locationManager = CLLocationManager.init()
@@ -53,15 +53,15 @@ class ViewController: UIViewController, MKMapViewDelegate
         myMapView.addAnnotation(myDemon)
         
         let mySuperMan = MKPointAnnotation()
-        myDemon.coordinate = sixFlagsSuperMan
-        myDemon.title = "SuperMan"
-        myDemon.subtitle = "Questions 3-4"
+        mySuperMan.coordinate = sixFlagsSuperMan
+        mySuperMan.title = "SuperMan"
+        mySuperMan.subtitle = "Questions 3-4"
         myMapView.addAnnotation(mySuperMan)
         
         let myRagingBull = MKPointAnnotation()
-        myDemon.coordinate = sixFlagsRagingBull
-        myDemon.title = "Raging Bull"
-        myDemon.subtitle = "Questions 5-6"
+        myRagingBull.coordinate = sixFlagsRagingBull
+        myRagingBull.title = "Raging Bull"
+        myRagingBull.subtitle = "Questions 5-6"
         myMapView.addAnnotation(myRagingBull)
     }
     
